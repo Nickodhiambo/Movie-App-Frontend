@@ -26,7 +26,7 @@ async function returnMovies(url) {
         const title = document.createElement("h3");
 
         img.src = IMG_PATH + item.poster_path;
-        title.textContent = `${item.title}`;
+        title.innerHTML = `${item.title}<br><a href="movie.html?id=${item.id}&&title=${item.title}">Reviews</a>`;
 
         // Append every elements to row
         cardDiv.appendChild(img);
