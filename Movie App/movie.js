@@ -11,15 +11,15 @@ const title = document.getElementById("title");
 title.innerText = movieTitle;
 
 const div_new = document.createElement('div');
-div_new.setAttribute('class', 'column');
+div_new.setAttribute('class', 'column new-review');
 div_new.innerHTML = `
             <div class="card">
-                New Review
+                <h6>New Review</h6>
                 <p><strong>Review: </strong>
-                    <input type='text' id='new_review' value='' />
+                    <input type='text' id='new_review' value='' placeholder='Your review'/>
                 </p>
                 <p><strong>User: </strong>
-                    <input type='text' id='new_user' value='' />
+                    <input type='text' id='new_user' value='' placeholder='Your name' />
                 </p>
                 <p><a href='#' onclick="saveReview('new_review', 'new_user')">Save</a></p>
             </div`
@@ -38,7 +38,7 @@ async function returnReviews(url) {
 
                 //Dynamically create containers for API data
                 const columnDiv = document.createElement('div');
-                columnDiv.setAttribute('class', 'column');
+                columnDiv.setAttribute('class', 'column reviews-div');
 
                 columnDiv.innerHTML = `
                     <div class="card" id='${review._id}'>

@@ -70,3 +70,53 @@ body{
 .card h3{
     text-align: center;
 }
+
+h1{
+    margin: 0 20px;
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 0 20px;
+}
+
+.reviews-div .card{
+    padding: 10px;
+}
+
+.reviews-div a{
+    text-decoration: none;
+    color: #3538ec;
+}
+
+.reviews-div a:hover{
+    color: #FF4433;
+}
+
+.new-review p{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 7px;
+}
+
+.new-review input{
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.new-review h6{
+    font-size: 1.5rem;
+    padding: 7px;
+}
+
+.new-review a{
+    text-decoration: none;
+    color: #3538ec; 
+}
+
+.new-review a:hover{
+    color: #FF4433;
+}
